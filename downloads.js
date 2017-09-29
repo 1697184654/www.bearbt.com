@@ -4,8 +4,6 @@ var fs = require('fs');
 
 exports.downloads = function(keywords,page){
     var url = 'http://bearbt.com/search/'+keywords+'/'+page;
-    console.log('----------当前下载:'+ keywords + '---------第'+page+'页------------');
-    console.log(url);
     url = encodeURI(url);
     request({
         uri : url,
