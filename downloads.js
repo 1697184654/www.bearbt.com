@@ -4,6 +4,8 @@ var fs = require('fs');
 
 exports.downloads = function(keywords,page){
     var url = 'http://bearbt.com/search/'+keywords+'/'+page;
+    console.log('----------当前下载:'+ keywords + '---------第'+page+'页------------');
+    console.log(url);
     request({
         uri : url,
         headers : {
@@ -30,7 +32,8 @@ exports.downloads = function(keywords,page){
                 content += '发布时间:' + time.trim() + '\n';
                 content += link + '\n';
                 content += '\n';
-                fs.writeFile(keywords + '.txt',content,{encoding:'utf-8','mode':'777',flag:'a+'});
+                console.log(content);
+                fs.writeFile(keywords + '.txt',content,{mode:'777',flag:'a+'});
 
             }
         }else
