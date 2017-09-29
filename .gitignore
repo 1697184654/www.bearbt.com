@@ -1,0 +1,5 @@
+/node_modules
+/.idea
+*.sublime-*
+oracle.sqlite*
+/downloads

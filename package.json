@@ -1,0 +1,29 @@
+{
+  "name": "www.bearbt.com",
+  "version": "1.0.0",
+  "description": "数据采集",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1697184654/www.bearbt.com.git"
+  },
+  "keywords": [
+    "链接"
+  ],
+  "author": "dave",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1697184654/www.bearbt.com/issues"
+  },
+  "homepage": "https://github.com/1697184654/www.bearbt.com#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.0",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "mysql": "^2.14.1"
+  }
+}
