@@ -23,14 +23,14 @@ exports.downloads = function(keywords,page){
                 var time = span.eq(2).text();
                 var link = li.eq(i).find('.dInfo').find('a').attr('href');
                 var content = '';
-                content += '--------------------------------------\n';
-                content += '\n';
-                content += title + '\n';
-                content +=  '文件大小:'+size+'\n';
-                content += '文件数量:'+ count + '个\n';
-                content += '发布时间:' + time.trim() + '\n';
-                content += link + '\n';
-                content += '\n';
+                content += '--------------------------------------\r\n';
+                content += '\r\n';
+                content += title + '\r\n';
+                content +=  '文件大小:'+size+'\r\n';
+                content += '文件数量:'+ count + '个\r\n';
+                content += '发布时间:' + time.trim() + '\r\n';
+                content += link + '\r\n';
+                content += '\r\n';
                 console.log(content);
                 fs.writeFile(keywords + '.txt',content,{mode:'777',flag:'a+'});
 

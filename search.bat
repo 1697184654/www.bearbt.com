@@ -7,4 +7,5 @@ echo ----------------------------------------------------------------
 set /p keywords=请输入您要搜索的关键字：
 
 node index.js %keywords%
+start %keywords%.txt
 pause
