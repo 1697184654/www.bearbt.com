@@ -17,7 +17,6 @@ exports.downloads = function(keywords,page){
             var li = $('#container').find('.main').find('.mlist').find('li');
             if ( !li.length ) {
                 process.exit(0);
-                return;
             }
             for ( var i=0; i< li.length; i++ ) {
                 var title = li.eq(i).find('.T1').find('a').text();
