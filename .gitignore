@@ -3,3 +3,4 @@
 *.sublime-*
 oracle.sqlite*
 /downloads
+*.txt
